@@ -20,6 +20,10 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class Main
 {
+       
+       @Instance(Main.modid)
+       public static Main instance;
+       
        public static final String modid = "CakeStuff";
        // Main Blocks/Cakes
        public static Block cakeOre;
@@ -46,6 +50,8 @@ public class Main
        @EventHandler
        public void preInit(FMLPreInitializationEvent event)
        {
+    	   
+    	   //I register stuff here cause it is more simpler but okay.
     	   
        }
        
