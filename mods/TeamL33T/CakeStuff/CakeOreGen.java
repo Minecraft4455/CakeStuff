@@ -29,12 +29,14 @@ public class CakeOreGen implements IWorldGenerator {
 	private void generateNether(World world, Random random, int i, int j) {}
 
 	private void generateSurface(World world, Random random, int i, int j) {
+		
 		for(int k = 0; k < 35; k++) {
-	        int cakeOreXCoord = i + random.nextInt(16);
-	        int cakeOreYCoord = random.nextInt(31);// + 70 (idk);
-	        int cakeOreZCoord = j + random.nextInt(16);
-	        new WorldGenMinable(CakeStuffID.CakeOre, 4).generate(world, random, cakeOreXCoord, cakeOreYCoord, cakeOreZCoord);
+	        	int cakeOreXCoord = i + random.nextInt(16);
+	        	int cakeOreYCoord = random.nextInt(31);// + 70 (idk); //Should be somwhere near 40 and lower ~Minecraft4455
+	        	int cakeOreZCoord = j + random.nextInt(16);
+			new WorldGenMinable(CakeStuffID.CakeOre, 4).generate(world, random, cakeOreXCoord, cakeOreYCoord, cakeOreZCoord);
 		}
+		
 	}
 
 
